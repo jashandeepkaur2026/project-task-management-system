@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/auth/login";
+const API_URL = "https://project-task-management-api.onrender.com/api/auth/login";
 
 async function login() {
     const email = document.getElementById("email").value;

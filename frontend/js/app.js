@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/tasks";
+const API_URL = "https://project-task-management-api.onrender.com/api/tasks";
 
 const role = localStorage.getItem("role");
 const userId = localStorage.getItem("userId");

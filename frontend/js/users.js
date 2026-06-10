@@ -1,7 +1,7 @@
 async function loadUsers() {
     try {
         const response = await fetch(
-            "http://localhost:5000/api/users"
+            "https://project-task-management-api.onrender.com/api/users"
         );
 
         const users = await response.json();
@@ -40,7 +40,7 @@ async function deleteUser(id) {
     }
 
     await fetch(
-        `http://localhost:5000/api/users/${id}`,
+        `https://project-task-management-api.onrender.com/api/users/${id}`,
         {
             method: "DELETE"
         }
@@ -66,7 +66,7 @@ async function createUser() {
         document.getElementById("role").value;
 
     const response = await fetch(
-        "http://localhost:5000/api/auth/register",
+        "https://project-task-management-api.onrender.com/api/auth/register",
         {
             method: "POST",
 

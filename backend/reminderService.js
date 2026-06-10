@@ -1,6 +1,6 @@
 const cron = require("node-cron");
 const axios = require("axios");
-const Task = require("./models/Task");
+const Task = require("./models/task");
 
 cron.schedule("0 9 * * *", async () => {
 

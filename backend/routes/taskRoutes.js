@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const Task = require("../models/Task");
+const Task = require("../models/task");
 const axios = require("axios");
-const User = require("../models/User");
+const User = require("../models/user");
 
 // GET all tasks
 router.get("/", async (req, res) => {

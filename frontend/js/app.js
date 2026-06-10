@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
 async function loadEmployees() {
     if (role !== "manager") return;
 
-    const response = await fetch("http://localhost:5000/api/auth/employees");
+    const response = await fetch("https://project-task-management-api.onrender.com/api/auth/employees");
     const employees = await response.json();
 
     const dropdown = document.getElementById("assignedTo");
